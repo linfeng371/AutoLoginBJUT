@@ -9,5 +9,3 @@
 'v6ip = GetIpv6Address <p>
 ***
 win10的启动目录在C:\Users\你的用户名\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup <p>
-win7 win8用户请尽快升级至win10 <p>
-OS X用户请换Windows！<p>
