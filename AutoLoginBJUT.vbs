@@ -46,11 +46,9 @@ For Each objItem in Items
     If LCase(Left(objItem.PNPDeviceID, 4))="pci\" Then
         Set Its = wmiService.ExecQuery("Select * From Win32_NetworkAdapterConfiguration where Caption='"& objItem.Caption &"'")
         For Each It in Its
-            If not IsNull(It.MACAddress) Then
-                If not IsNull(It.IPAddress) Then
-                    If not IsNull(It.IPAddress(2)) Then
+            If not IsNull(It.IPAddress) Then
+                If not IsNull(It.IPAddress(2)) Then
                     address = It.IPAddress(2)
-                    End If
                 End If
             End If
         Next
